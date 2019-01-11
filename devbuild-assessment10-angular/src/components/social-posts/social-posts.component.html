@@ -1,0 +1,30 @@
+<button >Post to Chitter</button>
+
+<h2>Chits</h2>
+
+<ul class="chits">
+  <li 
+    *ngFor="let chit of chits" 
+    >
+    <span class="badge">Title: {{chit.title}}</span><br/>Message: {{chit.message}}
+  </li>
+</ul>
+
+<div>
+  <h2>Chit Something!</h2>
+  <form>
+
+    <div>
+      <label>New Chit:
+        <input ngModel="newChit.title" placeholder="Enter a title">
+        <input ngModel="newChit.message" placeholder="Enter a message">
+      </label>
+    </div>
+    
+    <button type="submit" (click)="saveChit('newChit.title','newChit.message')">Submit</button>
+
+
+  </form>
+  
+
+</div>

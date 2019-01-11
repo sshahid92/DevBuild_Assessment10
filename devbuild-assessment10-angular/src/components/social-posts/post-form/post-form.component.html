@@ -1,0 +1,15 @@
+<div>
+  <h2>Chit Something!</h2>
+  <form>
+
+    
+  </form>
+  <div>
+    <label>New Chit:
+      <input ngModel="newChit.title" placeholder="Enter a title">
+      <input ngModel="newChit.message" placeholder="Enter a message">
+    </label>
+  </div>
+  <button (click)="sendData('newChit.title','newChit.message')">Submit</button>
+
+</div>
